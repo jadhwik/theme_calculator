@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        CALCULATOR
+    </title>
+    <link rel="stylesheet" href="calc.css">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <p id="num">1 2 3 </p>
+        <div class="table1">
+        <table>
+            <tr>
+                <td>
+
+        <p id="calc">calc</p>
+        </td>
+
+        <td id="th">THEME</td>  
+
+<td>
+    
+   
+    <div class="theme">
+        
+        
+        <input type="radio" class="button1" name="toggle" id="one" />
+        <input type="radio" class="button1" name="toggle" id="two" />
+        <input type="radio" class="button1" name="toggle" id="three" />
+
+           
+       </div> 
+</td>
+</tr>
+<tr>
+    <td colspan="4">
+        <div id="display">
+        <input type="text" id="disp"/>
+    </div>
+    </td>
+</tr>
+</table>
+</div>
+<div id="switches">
+    <table>
+        
+        <tr>
+            <td> <input type="button" class="button" onclick="disp(7)" value="7" ></td>
+            <td> <input type="button" class="button" onclick="disp(8)" value="8" ></td>
+            <td> <input type="button" class="button" onclick="disp(9)" value="9"></td>
+            <td> <input type="button" class="button" onclick="clr()" value="DEL" id="del"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" class="button" onclick="disp(4)" value="4"></td>
+            <td> <input type="button" class="button" onclick="disp(5)" value="5"></td>
+            <td> <input type="button" class="button" onclick="disp(6)" value="6"></td>
+            <td> <input type="button" class="button" onclick="disp('+')" value="+"></td>
+        </tr>
+        <tr>
+            <td> <input type="button"   class="button" onclick="disp(1)" value="1"></td>
+            <td> <input type="button" class="button" onclick="disp(2)" value="2"></td>
+            <td> <input type="button" class="button" onclick="disp(3)" value="3"></td>
+            <td> <input type="button" class="button" onclick="disp('-')" value="-"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" class="button" onclick="disp('.')" value="."></td>
+            <td> <input type="button" class="button" onclick="disp(0)" value="0"></td>
+            <td> <input type="button" class="button" onclick="disp('/')" value="/"></td>
+            <td> <input type="button" class="button" onclick="disp('*')" value="x"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button"  class="button" value="RESET"  id="reset" onclick="reset()"></td>
+            <td colspan="2"><input type="button"  class="button"  value="=" id="eq" onclick="calc()"></td>
+            
+        </tr>
+    </table>
+</div>
+
+      
+     
+<script src="calc.js"></script>
+     
+        
+</body>
+
+</html>
